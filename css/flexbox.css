@@ -1,0 +1,124 @@
+/* CSS Document */
+
+/* Add margin and padding 0 pixel to all the body elements  */
+/* CSS Reset */
+body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+form, label,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+}
+/* END CSS Reset*/
+
+/* Add any font family from your choice to all the body elements */
+
+body {
+  font-family: 'Times New Roman', sans-serif;
+}
+
+/* Set the background color of the header to "#333" (Dark charcoal)and the text color to white */
+/* Add padding of 22 pixels to the header. */
+/* Center align the text in the header. */
+header {
+	background-color: #333;
+	color: white;
+	padding: 22px;
+	text-align: center;
+}
+
+/* Set the display property of the container to "flex". */
+/*  Arrange the flex items horizontally and ensure equal space between them. */
+/* Allow the flex items to wrap onto the next line when there is not enough space. */
+/* Set the maximum width of the container to 800 pixels and center it horizontally on the page. */
+/* Add a margin of 40 pixels on the top and bottom of the container. */
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;  /*space-evenly;  space-between;*/
+	flex-wrap: wrap;
+	max-width: 1300px;
+	margin: 40px auto;
+}
+
+/*Set the background color to "#f1f1f1".  */
+/* Add a border of 1 pixel solid color "#ddd" */
+/* Set a border-radius of 5 pixels. */
+/* Add padding of 20 pixels to the boxes. */
+/* Create equal-width boxes using flexbox properties. */
+/* Ensure each box has a minimum width of 200 pixels. */
+.container .box {
+	background-color: #f1f1f1;
+	/* border-style: solid;
+	border-width: 1px;
+	border-color: #ddd; */
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	padding: 10px;
+	flex:0; 
+	/*flex: 1 1 calc(33.33% - 20px);*/
+	min-width: 200px;
+	text-align: center;
+	/*margin:10px;*/
+}
+
+.red {
+	/*color: red;*/
+	background-color: red !important;
+}
+
+.blue {
+	/*color: blue;*/
+	background-color: lightblue !important;
+}
+
+.green {
+	/*color: green;*/
+	background-color: green !important;
+}
+
+.yellow {
+	/*color: #FFD700;*/
+	background-color:  #FFD700 !important;
+}
+
+.orange {
+	/*color: orange;*/
+	background-color: orange !important;
+}
+
+
+/* Add margin 20 pixels to the paragraph located insides the footer */
+footer p {
+	margin: 20px;
+	text-align: center;
+}
+
+/* t) Create a responsive layout using media queries.
+u) Define a media query for screen widths less than or equal to 600 pixels.
+v) Inside the media query, change the flex direction to vertical for the container.
+ */
+
+@media screen and (max-width: 600px) {
+	.container {
+		flex-direction: column;
+		align-items: center;
+		
+	}
+	
+	.container .box{
+		
+		flex: 0;
+		width:200px;
+	
+	}
+}
