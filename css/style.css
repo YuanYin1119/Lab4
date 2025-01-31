@@ -148,7 +148,7 @@ footer p {
 }
 
 #box1 {
-	width: 55%;
+	width: 450px;
 	height: 86px;
 	border: 2px solid green;
 	margin-top: 10px;
@@ -157,24 +157,24 @@ footer p {
 }
 
 #box2 {
-	width: 36%;
-	height: 54px;
+	width: 300px;
+	height: 52px;
 	border: 2px solid blue;
 	margin-left: 5px;
 	margin-bottom: 2px;
 }
 
 #box3 {
-	width: 36%;
-	height: 54px;
+	width: 300px;
+	height: 52px;
 	border: 2px solid black;
 	margin-left: 5px;
 	margin-bottom: 2px;
 }
 
 #box4 {
-	width: 36%;
-	height: 58px;
+	width: 300px;
+	height: 56px;
 	border: 2px solid red;
 	margin-left: 5px;
 
@@ -203,26 +203,6 @@ footer p {
 	
 	#box{
 		width: 100%;
-	}
-	
-	#box1 {
-	width: 420px;
-	
-	}
-
-	#box2 {
-		width: 280px;
-		
-	}
-
-	#box3 {
-		width: 280px;
-		
-	}
-
-	#box4 {
-		width: 280px;
-
 	}
 }
 	
